@@ -15,34 +15,42 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <style>
-    ody{
-    background-image: url(weatherimg.jpg);
-    background-repeat: no-repeat;
+    body{
+    background-color: white;
 }
 
 h1{
     text-align: center;
     font-family: 'Oswald', sans-serif; 
+    font-size: 150px;
+    font-weight: bolder;
 }
 
-.lead{
-    text-align: center;  
-    display: flex;
-    border-left: 100px;
+h4{
+    font-family: 'Oswald', sans-serif;
 }
 
-#searchBtn{
+#searchButton{
     background-color: green;
 }
 
-.form-group{
-    align-content: center;
-} 
+.jumbotron{
+    background-color: #AEB79B;
+}
+
+.bg{
+    background-color: #AEB79B;  
+    font-family: 'Oswald', sans-serif;
+}
+
+#city #temp #humid #wind #UV{
+    font-family: 'Oswald', sans-serif;
+}
     
 </style>
 </head>
 <body>
-    <div class="jumbotron bg-dark text-white">
+    <div class="jumbotron bg text-white">
         <h1 class="text-center"> Weather Dashboard </h1>
     </div>
     <div class='container-fluid'>
@@ -82,31 +90,31 @@ h1{
                     <h4> 5-Day Forecast </h4>
                     <br>
                     <div class='row px-3 py-2'>
-                        <div class='bg-primary col-lg-2 border'>
+                        <div class='bg col-lg-2 border'>
                             <p id='day1'></p>
                             <img id='wIcon1' src='' alt='Weather Icon'>
                             <p id='temp1'></p>
                             <p id='humid1'></p>
                         </div>
-                        <div class='bg-primary  col-lg-2 border'>
+                        <div class='bg  col-lg-2 border'>
                             <p id='day2'></p>
                             <img id='wIcon2' src='' alt='Weather Icon'>
                             <p id='temp2'></p>
                             <p id='humid2'></p>
                         </div>
-                        <div class='bg-primary  col-lg-2 border'>
+                        <div class='bg col-lg-2 border'>
                             <p id='day3'></p>
                             <img id='wIcon3' src='' alt='Weather Icon'>
                             <p id='temp3'></p>
                             <p id='humid3'></p>
                         </div>
-                        <div class='bg-primary  col-lg-2 border'>
+                        <div class='bg  col-lg-2 border'>
                             <p id='day4'></p>
                             <img id='wIcon4' src='' alt='Weather Icon'>
                             <p id='temp4'></p>
                             <p id='humid4'></p>
                         </div>
-                        <div class='bg-primary  col-lg-2 border'>
+                        <div class='bg  col-lg-2 border'>
                             <p id='day5'></p>
                             <img id='wIcon5' src='' alt='Weather Icon'>
                             <p id='temp5'></p>
